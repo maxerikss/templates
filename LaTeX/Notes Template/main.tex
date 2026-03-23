@@ -3,7 +3,7 @@
 \input{format/preamble}
 
 %%%
-\def\nameoflab{Name of Hand In}
+\def\nameoflab{Notes on \textit{Book}}
 \def\coursecode{Course code}
 
 \def\authorOne{Max Eriksson}
@@ -16,19 +16,18 @@
 %\pagestyle{empty}
 \input{format/header}
 \doublespacing
-
+\fancyfoot{}
+\tableofcontents
 \clearpage
+\input{format/header.tex}
 \setcounter{page}{1}
 
 \pagestyle{fancy}
 
-\input{paper/Exercise1}
-\newpage
-\input{paper/Exercise2}
-\newpage
-\input{paper/Exercise3}
-\newpage
-\input{paper/Exercise4}
+\input{paper/Chapter1}
+\input{paper/Chapter2}
+\input{paper/Chapter3}
+\input{paper/Chapter4}
 
 %\include{paper/appendix}
 

@@ -75,3 +75,37 @@
 
 % using inkscapefiles
 \graphicspath{{figures/}}
+
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+% theta <-> vartheta
+\let\oldtheta\theta
+\let\oldvartheta\vartheta
+\renewcommand{\theta}{\oldvartheta}
+\renewcommand{\vartheta}{\oldtheta}
+
+% epsilon <-> varepsilon
+\let\oldepsilon\epsilon
+\let\oldvarepsilon\varepsilon
+\renewcommand{\epsilon}{\oldvarepsilon}
+\renewcommand{\varepsilon}{\oldepsilon}
+
+% phi <-> varphi
+\let\oldphi\phi
+\let\oldvarphi\varphi
+\renewcommand{\phi}{\oldvarphi}
+\renewcommand{\varphi}{\oldphi}
+
+\renewcommand{\vec}[1]{\bm{\mathrm{#1}}}
+
+\newcommand{\unNumberedSection}[1]{
+    \section*{#1}
+    \addcontentsline{toc}{section}{#1}
+    \markboth{#1}{}
+}
+\newcommand{\unNumberedSubSection}[1]{
+    \subsection*{#1}
+    \addcontentsline{toc}{subsection}{#1}
+    %\markboth{#1}{}
+}
